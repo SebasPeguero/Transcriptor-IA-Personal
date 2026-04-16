@@ -1,0 +1,10 @@
+# Entornos virtuales
+venv/
+
+# Archivos de seguridad
+.env
+
+# Carpetas temporales y basura de Python
+temp_audios/
+__pycache__/
+*.pyc
