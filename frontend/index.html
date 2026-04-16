@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcriptor By Sebas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Transcriptor By Sebas</h1>
+    </header>
+
+    <main class="container">
+        <section class="upload-section">
+            <div class="upload-box" id="dropzone">
+                <div class="icon">☁️</div>
+                <h2>Subir Archivo de Audio</h2>
+                <p>Arrastra tu grabación aquí, o haz clic para buscar.</p>
+                
+                <input type="file" id="audioInput" accept="audio/*" hidden>
+                <button class="btn-primary" id="browseBtn">Buscar Archivos</button>
+                
+                <p class="subtitle">Soporta MP3, WAV, M4A</p>
+                <p id="loadingText" class="hidden">Procesando con IA... Por favor espera ⏳</p>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="result-card">
+                <div class="card-header">
+                    <h3>Texto Original</h3>
+                </div>
+                <div class="card-body">
+                    <p id="textoOriginal">Awaiting processing...</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <div class="card-header">
+                    <h3>Texto Encriptado</h3>
+                </div>
+                <div class="card-body">
+                    <p id="textoEncriptado">Awaiting processing...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

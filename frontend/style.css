@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Caja de subida */
+.upload-section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border: 2px dashed #e2e8f0;
+}
+
+.upload-box .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.upload-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.upload-box p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#loadingText {
+    color: #f59e0b;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Cajas de resultados */
+.results-section {
+    display: flex;
+    gap: 20px;
+}
+
+.result-card {
+    background-color: white;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.card-header h3 {
+    font-size: 16px;
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+    min-height: 250px;
+    color: #64748b;
+    overflow-wrap: break-word; /* Evita que el texto encriptado largo rompa la caja */
+}
